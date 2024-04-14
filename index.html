@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="assets/BellaOlonje.png" alt=""></div>
+                <ul>
+                    <li class="hideOnMobile"><a href="">Home</a></li>
+                    <li class="hideOnMobile"><a href="">Product</a></li>
+                    <li class="hideOnMobile"><a href="">Faq</a></li>
+                    <li class="hideOnMobile"><a href="">Contact</a></li>
+                </ul>
+                <span class="open-btn">&#9776;</span>
+
+                <div class="offcanvas-menu">
+                  <a class="close-btn" href="#">
+                    &times;
+                  </a>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="hero">
+                <div class="container">
+                  <h3>Food app</h3>
+                  <h1>
+                    Why stay hungry when <br />
+                    you can order from Bella Olonje
+                  </h1>
+                  <p>Download the bella ononje's food app now on</p>
+                  <div class="app-buttons">
+                    <a href="#" class="btn btn-primary">Playstore</a>
+                    <a href="#" class="btn btn-secondary">App store</a>
+                  </div>
+                </div>
+                <div class="handphone">
+                  <img src="assets/Group53.png" alt="">
+                </div>
+    </section>
+    <!-- /End Section Hero -->
+
+    <!-- Section How the app works -->
+    <section class="how-app-works">
+      <div class="container">
+        <div class="divider">
+        </div>
+        <p>How the app works</p>
+      </div>
+    </section>
+    <!-- /End Section How the app works -->
+
+    <!-- Section Create an account -->
+    <section class="create-an-account">
+      <div class="container">
+        <div class="left">
+          <img src="assets/Rectangle.png" alt="">
+        </div>
+        <div class="right">
+          <h3>Create an account</h3>
+          <h2>Create/login to an existing
+            account to get started</h2>
+          <h4>An account is created with your email
+              and a desired password</h4>
+        </div>
+      </div>
+    </section>
+    <!-- /End Section Create an account -->
+
+    <!-- Section explore variaties -->
+    <section class="explore-variaties">
+      <div class="container">
+        <div class="left">
+          <h3>Explore varieties</h3>
+          <h2>Shop for your favorites
+            meal as e dey hot.</h2>
+          <h4>Shop for your favorite meals or drinks
+            and enjoy while doing it.</h4>
+        </div>
+        <div class="right">
+          <img src="assets/Rectangle(1).png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- /End Section explore variaties -->
+
+    <!-- Section Checkout -->
+    <section class="checkout">
+      <div class="container">
+        <div class="left">
+          <img src="assets/Rectangle(2).png" alt="">
+        </div>
+        <div class="right">
+          <h3>Checkout</h3>
+          <h2>When you done check out
+            and get it delivered.</h2>
+          <h4>When you done check out and get it 
+            delivered with ease.</h4>
+        </div>
+      </div>
+    </section>
+    <!-- /End Section Checkout -->
+
+    <!-- Section download the app now -->
+    <section class="desktop-hero">
+      <div class="container">
+        <h2>Download the app now.</h2>
+        <br>
+          Available on your favorite store. Start your premium experience now </br>
+        </h4>
+        <div class="app-buttons">
+          <a href="#" class="btn btn-primary">Playstore</a>
+          <a href="#" class="btn btn-secondary">App store</a>
+        </div>
+      </div>
+    </section>
+     <!-- /End Section download the app now -->
+
+     <footer>
+      <div class="container">
+        <div class="logo"><img src="assets/BellaOlonje.png" alt=""></div>
+        <div class="medsos">
+          <div><img src="assets/twitter.png" alt=""></div>
+          <div><img src="assets/fb.png" alt=""></div>
+          <div><img src="assets/instagram.png" alt=""></div>
+        </div>
+        <div><p>Copyright 2020 Bella Onojie.com</p></div>
+      </div>
+     </footer>
+
+    <script>
+const openBtn = document.querySelector('.open-btn');
+const closeBtn = document.querySelector('.close-btn');
+const offcanvasMenu = document.querySelector('.offcanvas-menu')
+
+openBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    offcanvasMenu.classList.add('active');
+});
+
+closeBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    offcanvasMenu.classList.remove('active');
+});
+      </script>
+</body>
+</html>
